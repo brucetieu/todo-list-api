@@ -13,12 +13,7 @@ services:
       - 5435:5432
     volumes:
       - db:/var/lib/postgresql/data 
-    networks:
-      - todo
 
 volumes:
   db:
 
-networks:
-  todo:
-    driver: bridge
